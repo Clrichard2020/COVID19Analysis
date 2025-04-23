@@ -1,0 +1,416 @@
+<html>
+<head>
+<title>COVID-19 Statewide Analysis</title>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #2a6592; }
+        h2 { color: #446e9b; margin-top: 40px; }
+        p { max-width: 800px; line-height: 1.6; }
+        .chart { margin-bottom: 60px; }
+    </style>
+</head>
+<body>
+<h1>COVID-19 Statewide Analysis from Social and Political Perspectives</h1>
+<p>
+<h2>Introduction</h2>
+<p>This project presents a comprehensive, state-level analysis of COVID-19 in the United States, using a series of Tableau visualizations to explore how the pandemic unfolded across different political, demographic, and social landscapes. Rather than focusing solely on raw case and death counts, the visuals incorporate per capita metrics, policy decisions, vaccination rates, and sociopolitical factors like state leadership and public health infrastructure.<br><br>
+
+Through comparisons of infection rates, death rates, mask mandates, vaccination trends, and indicators like the Social Determinants of Health Index (SDOHi), viewers will gain insight into how state responses and underlying structural conditions influenced COVID-19 outcomes. By layering epidemiological data with political and social context, this analysis highlights the complex forces that shaped the U.S. pandemic experience.<br><br>
+
+<!-- FIG 1: Total COVID-19 Cases by State -->
+<div class="chart">
+<h3>Total COVID-19 Cases by State</h3>
+<p>This bar chart presents the total number of confirmed COVID-19 cases by U.S. state as of September 17, 2021.<br/><br/>
+
+It captures a snapshot of cumulative infections up to that date, offering a comparative look at how the pandemic had affected each state overall. Unsurprisingly, highly populated states such as California, Texas, and Florida report the highest case totals, partly due to their large populations and urban density, which facilitate higher transmission potential. California leads the count, reflecting its position as the most populous state and a major international hub.<br/><br/>
+
+However, raw case totals must be interpreted carefully. They do not account for population size, public health interventions, or testing capacity. For example, a state with a strong testing program might identify more cases compared to another state with limited testing infrastructure. Furthermore, states with early outbreaks (e.g., New York) had more time to accumulate cases, which also contributes to higher totals in the snapshot.
+The use of absolute case numbers rather than per capita rates limits insights into relative severity across states. This chart is therefore best used to understand scale rather than risk or rate.<br/><br/>
+<div class="tableauPlaceholder" id="viz1745297659720" style="position: relative;">
+<noscript><a href="#"><img alt="Total COVID-19 Cases by State" src="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/TotalCOVID-19CasesbyState/1_rss.png" style="border: none"/></a></noscript>
+<object class="tableauViz" style="display:none;">
+<param name="host_url" value="https://public.tableau.com/"/>
+<param name="embed_code_version" value="3"/>
+<param name="name" value="CSCE567Final_17452969027430/TotalCOVID-19CasesbyState"/>
+<param name="tabs" value="no"/>
+<param name="toolbar" value="yes"/>
+<param name="static_image" value="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/TotalCOVID-19CasesbyState/1.png"/>
+<param name="animate_transition" value="yes"/>
+<param name="display_static_image" value="yes"/>
+<param name="display_spinner" value="yes"/>
+<param name="display_overlay" value="yes"/>
+<param name="display_count" value="yes"/>
+<param name="language" value="en-US"/>
+<param name="filter" value="publish=yes"/>
+</object>
+</div><script type="text/javascript">
+        var divElement = document.getElementById('viz1745297659720');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</p></div>
+<!-- FIG 2: Cases Per Capita vs Population Density -->
+<div class="chart">
+<h3>Cases Per Capita vs Population Density</h3>
+<p>This scatter plot examines how COVID-19 cases per 100,000 residents relate to state population density, with states color-coded by gubernatorial political affiliation (Democratic or Republican).<br/><br/>
+
+The snapshot approach reveals how conditions at a specific point (September 17, 2021) manifest across different sociopolitical and demographic environments.
+Interestingly, the data challenge a simple linear correlation between density and case rate. States like Florida and Texas, less densely populated than New York, exhibit higher per capita case rates. This suggests that behavioral, policy, and cultural factors may be more influential than population density alone, including mask usage, public gathering policies, and political messaging.<br/><br/>
+
+Democratic-led states tend to show slightly lower or moderate per capita rates at comparable densities, potentially due to more prolonged mitigation strategies (e.g., mask mandates, business restrictions) (Gollwitzer et al., 2020). However, the overlap in data points emphasizes that political affiliation is not a sole predictor, though it often correlates with public health approaches.<br/><br/>
+<b>Citation</b>: Gollwitzer, A., Martel, C., Brady, W. J., &amp; Van Bavel, J. J. (2020). Partisan differences in physical distancing are linked to health outcomes during the COVID-19 pandemic. Nature Human Behaviour, 4(11), 1186–1197. <a href="https://doi.org/10.1038/s41562-020-00977-7">Click here</a></p>
+<div class="tableauPlaceholder" id="viz1745297722540" style="position: relative;">
+<noscript><a href="#"><img alt="Cases Per Capita vs Population Density" src="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/CasesPerCapitavsPopulationDensity/1_rss.png" style="border: none"/></a></noscript>
+<object class="tableauViz" style="display:none;">
+<param name="host_url" value="https://public.tableau.com/"/>
+<param name="embed_code_version" value="3"/>
+<param name="name" value="CSCE567Final_17452969027430/CasesPerCapitavsPopulationDensity"/>
+<param name="tabs" value="no"/>
+<param name="toolbar" value="yes"/>
+<param name="static_image" value="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/CasesPerCapitavsPopulationDensity/1.png"/>
+<param name="animate_transition" value="yes"/>
+<param name="display_static_image" value="yes"/>
+<param name="display_spinner" value="yes"/>
+<param name="display_overlay" value="yes"/>
+<param name="display_count" value="yes"/>
+<param name="language" value="en-US"/>
+<param name="filter" value="publish=yes"/>
+</object>
+</div><script type="text/javascript">
+        var divElement = document.getElementById('viz1745297722540');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</div>
+<!-- FIG 3: COVID-19 Death Rate by State -->
+<div class="chart">
+<h3>COVID-19 Death Rate by State</h3>
+<p>This bar chart shows each state's COVID-19 death rate as a percentage of total confirmed cases, reflecting the case fatality ratio (CFR) as of the snapshot date. The highest observed death rates appear in states like New York (2.32%), which was among the first U.S. epicenters of the pandemic. Early lack of medical knowledge, limited protective equipment, and overwhelmed hospital systems likely contributed to the elevated fatality ratios.<br/><br/>
+
+States like Florida and Texas have lower CFRs, potentially due to improved treatment protocols, younger infected populations, or underreporting of COVID-19 deaths and cases. It's important to note that CFR varies based on testing practices: states with more aggressive testing are likely to identify more mild or asymptomatic cases, thereby lowering the observed death rate.<br/><br/>
+
+Because this is not time series data, these death rates represent a single cumulative outcome, not a trend or evolution over time. The results are influenced by a wide range of variables, including hospital capacity, socioeconomic disparities, and population age distribution.<br/><br/>
+<b>Citation</b>: Woolf, S. H., Chapman, D. A., Sabo, R. T., Zimmerman, E. B., &amp; Woolf, N. J. (2021). Excess deaths from COVID-19 and other causes, March–July 2020. JAMA, 324(15), 1562–1564. <a href="https://doi.org/10.1001/jama.2020.19545">Click here</a>
+</p>
+<div class="tableauPlaceholder" id="viz1745297775888" style="position: relative;">
+<noscript><a href="#"><img alt="COVID-19 Death Rate by State" src="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/COVID-19DeathRatebyState/1_rss.png" style="border: none"/></a></noscript>
+<object class="tableauViz" style="display:none;">
+<param name="host_url" value="https://public.tableau.com/"/>
+<param name="embed_code_version" value="3"/>
+<param name="name" value="CSCE567Final_17452969027430/COVID-19DeathRatebyState"/>
+<param name="tabs" value="no"/>
+<param name="toolbar" value="yes"/>
+<param name="static_image" value="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/COVID-19DeathRatebyState/1.png"/>
+<param name="animate_transition" value="yes"/>
+<param name="display_static_image" value="yes"/>
+<param name="display_spinner" value="yes"/>
+<param name="display_overlay" value="yes"/>
+<param name="display_count" value="yes"/>
+<param name="language" value="en-US"/>
+<param name="filter" value="publish=yes"/>
+</object>
+</div><script type="text/javascript">
+        var divElement = document.getElementById('viz1745297775888');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</div>
+<!-- FIG 4: Total Mask Mandate Days by State -->
+<div class="chart">
+<h3>Total Mask Mandate Days by State</h3>
+<p>This chart compares how long each state implemented a statewide mask mandate. The duration of mandates ranged dramatically,from over 500 days in New York to zero days in Florida, which never imposed a statewide mandate. These differences are largely political and ideological, with Democratic governors generally embracing mandates more consistently than their Republican counterparts.<br/><br/>
+
+Longer mandates may reflect a more cautious or proactive public health approach. However, the presence of a mandate doesn’t guarantee compliance. States with longer mandates still saw high case totals, indicating that mandate enforcement, public compliance, and local policy variation all influence outcomes (van der Linden et al., 2021).
+This snapshot provides context for interpreting other metrics (e.g., death rates, vaccination rates) by showing which states took more aggressive mitigation actions and for how long.<br/><br/>
+<b>Citation</b>: Van der Linden, S., Roozenbeek, J., &amp; Compton, J. (2021). Inoculating against fake news about COVID-19. Frontiers in Psychology, 11, 566790. <a href="https://doi.org/10.3389/fpsyg.2020.566790">Click here</a></p>
+<i>Note:</i><p>Some states ended mask mandates and restarted them. The date ranges represent the start date of the first mask mandate and the most recent end date. The Total Mask Days column represents total masked days across all mandates for that state and does not include days where a mask mandate was not in place.
+
+
+    <div class="tableauPlaceholder" id="viz1745297861407" style="position: relative;">
+<noscript><a href="#"><img alt="Total Mask Mandate Days by State" src="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/TotalMaskMandateDaysbyState/1_rss.png" style="border: none"/></a></noscript>
+<object class="tableauViz" style="display:none;">
+<param name="host_url" value="https://public.tableau.com/"/>
+<param name="embed_code_version" value="3"/>
+<param name="name" value="CSCE567Final_17452969027430/TotalMaskMandateDaysbyState"/>
+<param name="tabs" value="no"/>
+<param name="toolbar" value="yes"/>
+<param name="static_image" value="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/TotalMaskMandateDaysbyState/1.png"/>
+<param name="animate_transition" value="yes"/>
+<param name="display_static_image" value="yes"/>
+<param name="display_spinner" value="yes"/>
+<param name="display_overlay" value="yes"/>
+<param name="display_count" value="yes"/>
+<param name="language" value="en-US"/>
+<param name="filter" value="publish=yes"/>
+</object>
+</div><script type="text/javascript">
+        var divElement = document.getElementById('viz1745297861407');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</div>
+<!-- FIG 5: Vaccination Coverage: One Dose vs Fully Vaccinated -->
+<div class="chart">
+<h3>Vaccination Coverage: One Dose vs Fully Vaccinated</h3>
+<p>This scatter plot compares partial (one dose) and full vaccination coverage across states. While the data aligns roughly along a positive trend line (more one-dose recipients = more fully vaccinated), deviations suggest differing follow-up rates, vaccine supply chains, or vaccine hesitancy levels.<br/><br/>
+
+States such as New York show a relatively high full vaccination rate compared to initial dose uptake, potentially reflecting robust appointment scheduling and communication strategies. In contrast, states with wider gaps may have experienced either follow-up fatigue or challenges in second dose access.<br/><br/>
+
+Political context again plays a role: research has shown that vaccine hesitancy is significantly more prevalent in Republican-leaning populations, especially regarding mRNA vaccines (Fridman et al., 2021).<br/><br/>
+<b>Citation</b>: Fridman, A., Gershon, R., &amp; Gneezy, A. (2021). COVID-19 and vaccine hesitancy: A longitudinal study. PLoS ONE, 16(4), e0250123. <a href="https://doi.org/10.1371/journal.pone.0250123">Click here</a></p>
+<div class="tableauPlaceholder" id="viz1745297913422" style="position: relative">
+<noscript>
+<a href="#">
+<img alt="Vaccination Coverage: One Dose vs. Fully Vaccinated " src="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/VaccinationCoverageOneDosevs_FullyVaccinated/1_rss.png" style="border: none"/>
+</a>
+</noscript>
+<object class="tableauViz" style="display:none;">
+<param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+<param name="embed_code_version" value="3"/>
+<param name="site_root" value=""/>
+<param name="name" value="CSCE567Final_17452969027430/VaccinationCoverageOneDosevs_FullyVaccinated"/>
+<param name="tabs" value="no"/>
+<param name="toolbar" value="yes"/>
+<param name="static_image" value="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/VaccinationCoverageOneDosevs_FullyVaccinated/1.png"/>
+<param name="animate_transition" value="yes"/>
+<param name="display_static_image" value="yes"/>
+<param name="display_spinner" value="yes"/>
+<param name="display_overlay" value="yes"/>
+<param name="display_count" value="yes"/>
+<param name="language" value="en-US"/>
+<param name="filter" value="publish=yes"/>
+</object>
+</div><script type="text/javascript">
+        var divElement = document.getElementById('viz1745297913422');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</div>
+<!-- FIG 6: Vaccination Rate by Political Affiliation -->
+<div class="chart">
+<h3>Vaccination Rate by Political Affiliation</h3>
+<p>This box plot compares full vaccination rates between Democratic-led and Republican-led states. The snapshot reveals that Democratic-governed states generally have higher median full vaccination rates, consistent with studies showing partisan differences in trust toward public health agencies (Allcott et al., 2020).<br/><br/>
+
+While the means differ, the overlap between the two groups illustrates that state-level leadership is not the sole determinant. Local policies, public messaging, and healthcare infrastructure also play roles. Still, the result provides evidence that political leadership significantly influences public health engagement during crises.<br/><br/>
+<i>Statistical Interpretation:</i><br/>The box and whisker plot shows that states with Democratic political affiliation tend to have higher COVID-19 vaccination rates (2 doses) compared to Republican states. The median vaccination rate in Democratic states is 0.5740, significantly higher than 0.4750 in Republican states. Additionally, the Democratic group shows a slightly wider interquartile range, indicating more variability in vaccination rates. Overall, this suggests a correlation between political affiliation and public health behavior, with Democratic states exhibiting higher overall vaccine uptake.<br/><br/>
+<b>Citation</b>: Allcott, H., Boxell, L., Conway, J., Gentzkow, M., Thaler, M., &amp; Yang, D. Y. (2020). Polarization and public health: Partisan differences in social distancing during the coronavirus pandemic. Journal of Public Economics, 191, 104254. <a href="https://doi.org/10.1016/j.jpubeco.2020.104254">Click here</a></p>
+<div class="tableauPlaceholder" id="viz1745297964486" style="position: relative">
+<noscript>
+<a href="#">
+<img alt="Vaccination Rate by Political Affiliation " src="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/VaccinationRatebyPoliticalAffiliation/1_rss.png" style="border: none"/>
+</a>
+</noscript>
+<object class="tableauViz" style="display:none;">
+<param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+<param name="embed_code_version" value="3"/>
+<param name="site_root" value=""/>
+<param name="name" value="CSCE567Final_17452969027430/VaccinationRatebyPoliticalAffiliation"/>
+<param name="tabs" value="no"/>
+<param name="toolbar" value="yes"/>
+<param name="static_image" value="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/VaccinationRatebyPoliticalAffiliation/1.png"/>
+<param name="animate_transition" value="yes"/>
+<param name="display_static_image" value="yes"/>
+<param name="display_spinner" value="yes"/>
+<param name="display_overlay" value="yes"/>
+<param name="display_count" value="yes"/>
+<param name="language" value="en-US"/>
+<param name="filter" value="publish=yes"/>
+</object>
+</div><script type="text/javascript">
+        var divElement = document.getElementById('viz1745297964486');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</div>
+<!-- FIG 7: Death Rate vs Vaccination Rate -->
+<div class="chart">
+<h3>Death Rate vs Vaccination Rate</h3>
+<p>This scatter plot examines the relationship between full vaccination rates and death rates by state. As of September 17, 2021, the relationship appears modestly inverse—states with higher vaccination coverage tend to have lower COVID-19 death rates, supporting the clinical consensus that vaccines reduce severe outcomes (CDC, 2021).<br/><br/>
+
+States with low vaccination but high death rates may reflect a combination of vaccine hesitancy, overwhelmed healthcare systems, or a larger proportion of vulnerable residents. The data underscores the protective effects of vaccination, even though causality cannot be inferred directly from this snapshot.<br/><br/>
+<b>Citation</b>: Centers for Disease Control and Prevention (CDC). (2021). Benefits of getting a COVID-19 vaccine. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-benefits.html">Click here</a></p>
+<div class="tableauPlaceholder" id="viz1745298005254" style="position: relative">
+<noscript>
+<a href="#">
+<img alt="Death Rate vs Vaccination Rate " src="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/DeathRatevsVaccinationRate/1_rss.png" style="border: none"/>
+</a>
+</noscript>
+<object class="tableauViz" style="display:none;">
+<param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+<param name="embed_code_version" value="3"/>
+<param name="site_root" value=""/>
+<param name="name" value="CSCE567Final_17452969027430/DeathRatevsVaccinationRate"/>
+<param name="tabs" value="no"/>
+<param name="toolbar" value="yes"/>
+<param name="static_image" value="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/DeathRatevsVaccinationRate/1.png"/>
+<param name="animate_transition" value="yes"/>
+<param name="display_static_image" value="yes"/>
+<param name="display_spinner" value="yes"/>
+<param name="display_overlay" value="yes"/>
+<param name="display_count" value="yes"/>
+<param name="language" value="en-US"/>
+<param name="filter" value="publish=yes"/>
+</object>
+</div><script type="text/javascript">
+        var divElement = document.getElementById('viz1745298005254');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</div>
+<!-- FIG 8: Well-Being Index vs COVID-19 Cases Per Capita -->
+<div class="chart">
+<h3>Well-Being Index vs Cases Per Capita</h3>
+<p>This chart compares state well-being scores-a composite measure of physical, social, and financial health—to COVID-19 case rates per capita. The expectation might be that higher well-being correlates with fewer cases, but this snapshot shows no consistent correlation, suggesting that well-being alone does not buffer transmission risk.<br/><br/>
+
+High well-being states still experienced significant outbreaks, possibly due to greater urbanization or international travel. However, well-being may indirectly influence case outcomes, such as hospitalization and death rates, rather than case incidence.<br/><br/>
+<b>Citation</b>: Gallup. (2020). State of American Well-Being. <a href="https://www.gallup.com/analytics/349280/wellbeing.aspx">Click here</a>
+</p>
+<div class="tableauPlaceholder" id="viz1745298048934" style="position: relative">
+<noscript>
+<a href="#">
+<img alt="Well-Being Index vs Cases Per Capita " src="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/Well-BeingIndexvsCasesPerCapita/1_rss.png" style="border: none"/>
+</a>
+</noscript>
+<object class="tableauViz" style="display:none;">
+<param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+<param name="embed_code_version" value="3"/>
+<param name="site_root" value=""/>
+<param name="name" value="CSCE567Final_17452969027430/Well-BeingIndexvsCasesPerCapita"/>
+<param name="tabs" value="no"/>
+<param name="toolbar" value="yes"/>
+<param name="static_image" value="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/Well-BeingIndexvsCasesPerCapita/1.png"/>
+<param name="animate_transition" value="yes"/>
+<param name="display_static_image" value="yes"/>
+<param name="display_spinner" value="yes"/>
+<param name="display_overlay" value="yes"/>
+<param name="display_count" value="yes"/>
+<param name="language" value="en-US"/>
+<param name="filter" value="publish=yes"/>
+</object>
+</div><script type="text/javascript">
+        var divElement = document.getElementById('viz1745298048934');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</div>
+<!-- FIG 9: SDOHi 2019 vs Death Rate -->
+<div class="chart">
+<h3>SDOHi 2019 vs Death Rate</h3>
+<p>This plot uses the Social Determinants of Health Index (SDOHi), which measures pre-existing social factors like housing, income, and education, to assess their relationship with COVID-19 death rates. The snapshot supports prior research indicating that states with lower SDOHi scores often see higher death rates, highlighting systemic inequities (Artiga et al., 2020).<br/><br/>
+
+States with stronger social safety nets (higher SDOHi) appear somewhat shielded from the most severe outcomes, likely due to better access to healthcare and healthier baseline conditions.<br/><br/>
+<b>Citation</b>: Artiga, S., Garfield, R., &amp; Orgera, K. (2020). Communities of color at higher risk for health and economic challenges due to COVID-19. Kaiser Family Foundation. <a href="https://www.kff.org">Click here</a></p>
+<div class="tableauPlaceholder" id="viz1745298091739" style="position: relative">
+<noscript>
+<a href="#">
+<img alt="SDOHi 2019 vs Death Rate" src="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/SDOHi2019vsDeathRate/1_rss.png" style="border: none"/>
+</a>
+</noscript>
+<object class="tableauViz" style="display:none;">
+<param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+<param name="embed_code_version" value="3"/>
+<param name="site_root" value=""/>
+<param name="name" value="CSCE567Final_17452969027430/SDOHi2019vsDeathRate"/>
+<param name="tabs" value="no"/>
+<param name="toolbar" value="yes"/>
+<param name="static_image" value="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/SDOHi2019vsDeathRate/1.png"/>
+<param name="animate_transition" value="yes"/>
+<param name="display_static_image" value="yes"/>
+<param name="display_spinner" value="yes"/>
+<param name="display_overlay" value="yes"/>
+<param name="display_count" value="yes"/>
+<param name="language" value="en-US"/>
+<param name="filter" value="publish=yes"/>
+</object>
+</div><script type="text/javascript">
+    var divElement = document.getElementById('viz1745298091739');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width='100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+</div>
+<!-- FIG 10: Total State Population vs Total COVID-19 Cases -->
+<div class="chart">
+<h3>Total Population vs Total COVID-19 Cases</h3>
+<p>This scatter plot assesses whether total population size predicts total COVID-19 case counts. While there is a broad positive relationship, the correlation is not perfect. Some less populous states recorded disproportionately high case totals, possibly due to lower restrictions or local superspreader events.<br/><br/>
+
+This visualization underscores the importance of adjusting for per capita metrics when assessing pandemic impact. Larger states had more opportunity for transmission, but policies and behaviors altered how that risk manifested.<br/><br/>
+<b>Citation</b>: U.S. Census Bureau. (2021). State population totals and components of change: 2020–2021. <a href="https://www.census.gov">Click here</a></p>
+<div class="tableauPlaceholder" id="viz1745298132103" style="position: relative">
+<noscript>
+<a href="#">
+<img alt="Total Population vs Total COVID-19 Cases " src="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/TotalPopulationvsTotalCOVID-19Cases/1_rss.png" style="border: none"/>
+</a>
+</noscript>
+<object class="tableauViz" style="display:none;">
+<param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+<param name="embed_code_version" value="3"/>
+<param name="site_root" value=""/>
+<param name="name" value="CSCE567Final_17452969027430/TotalPopulationvsTotalCOVID-19Cases"/>
+<param name="tabs" value="no"/>
+<param name="toolbar" value="yes"/>
+<param name="static_image" value="https://public.tableau.com/static/images/CS/CSCE567Final_17452969027430/TotalPopulationvsTotalCOVID-19Cases/1.png"/>
+<param name="animate_transition" value="yes"/>
+<param name="display_static_image" value="yes"/>
+<param name="display_spinner" value="yes"/>
+<param name="display_overlay" value="yes"/>
+<param name="display_count" value="yes"/>
+<param name="language" value="en-US"/>
+<param name="filter" value="publish=yes"/>
+</object>
+</div><script type="text/javascript">
+    var divElement = document.getElementById('viz1745298132103');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+</div>
+
+<h2>Conclusion</h2>
+<p>The COVID-19 pandemic uncovered the deep interconnections between public health, political leadership, and social infrastructure. As shown throughout these visualizations, the impact of the virus varied not only due to biological and epidemiological factors but also because of policy decisions, cultural behaviors, and pre-existing inequalities among states.<br><br>
+
+From infection and death rates to vaccination coverage and mask mandates, the data reveals clear patterns: states with stronger public health interventions and higher social support indices often fared better in minimizing severe outcomes. Meanwhile, political affiliation emerged as a consistent influence on state responses, affecting everything from mask policies to vaccine uptake. However, these findings showed something very important to note: no single factor determined a state's success or struggle during the pandemic.  The outcomes for each state were influenced by the interaction of many variables over time.<br><br>
+
+This project shows the importance of a more well-rounded approach to public health. This approach is one that goes beyond case counts to consider the roles of governance, trust, access, and equity. As the U.S. continues to recover from the effects of COVID-19 and prepare for future health crises, lessons drawn from this state-by-state analysis offer valuable insights into the kind of coordinated, inclusive strategies needed to respond effectively and appropriately to pandemics.<br><br>
+
+
+
+<p>Dataset Source: <a href="https://www.kaggle.com/datasets/camerongould/comprehensive-covid19-state-data" target="_blank">View CSV</a>
+
+
+</p></p></body>
+</html>
